@@ -32,3 +32,33 @@ uvicorn main:app --reload
 ```
 
 The application will be available at http://localhost:8000
+
+## Testing
+
+This project includes automated tests using pytest. To run the tests:
+
+```
+pytest
+```
+
+For more verbose output:
+
+```
+pytest -v
+```
+
+### Pre-commit Hook
+
+A pre-commit hook is included to run tests automatically before each commit. To set it up:
+
+1. Run the setup script:
+
+   ```
+   powershell -ExecutionPolicy Bypass -File .\setup_hooks.ps1
+   ```
+
+2. Now tests will run automatically before each commit, preventing commits if tests fail.
+
+### CI/CD Integration
+
+This project includes a GitHub Actions workflow that automatically runs tests on push and pull requests to the main branch. See `.github/workflows/pytest.yml` for details.
