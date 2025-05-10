@@ -27,7 +27,7 @@ async def welcome_message():
     """
     API endpoint that returns a welcome message
     """
-    return {"message": "More features will come soon !!!"}
+    return {"message": "features will add soon !!!"}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
