@@ -47,4 +47,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: test_bot/app:latest
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/test_bot:latest
