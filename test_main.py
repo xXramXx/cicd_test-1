@@ -22,7 +22,7 @@ def test_welcome_api():
     assert response.status_code == 200
     data = response.json()
     assert "message" in data
-    assert "features will add soon !!!" == data["message"]
+    assert "Features will add soon !!!" == data["message"]
 
 def test_static_files():
     """
